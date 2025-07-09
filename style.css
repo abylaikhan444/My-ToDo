@@ -1,0 +1,94 @@
+/* Reset и базовая стилизация */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Основная панель */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F8F8F8;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Логотип */
+.logo-img img {
+  max-height: 40px;
+  align-items: center;
+}
+
+/* Поисковая строка */
+.search-bar {
+  display: flex;
+  flex: 1;
+  width: 600px;
+  background: #f4f7ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+}
+
+.search-bar button {
+  background: #f26a63;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: #e55a55;
+}
+
+/* Дата */
+.date-part {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 14px;
+  color: #555;
+  min-width: 90px;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .date-part {
+    align-items: center;
+  }
+}
