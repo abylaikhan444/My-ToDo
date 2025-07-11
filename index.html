@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -28,16 +29,25 @@
         </nav>
     </div>
 
-
-
-    <!-- <div class="container">
-        <h1>Мой список задач</h1>
-        <div class="input-group">
-        <input type="text" id="taskInput" placeholder="Введите задачу..." />
-        <button id="addTaskBtn">Добавить</button>
+    <section class="left-navbar">
+        <div class="user-info">
+            <img src="/img/avatar.png" alt="user-photo">
+            <p>Abylaikhan</p>
+            <span>Abylaikhan@gmail.com</span>
         </div>
-        <ul id="taskList"></ul>
-    </div> -->
+        <div class="navbar-items">
+            <div class="dashboard-case">
+                <img src="/img/Vectors/dashboard.png" alt="Dashboard">
+                <a href="#"><span>Dashboard</span></a>
+            </div>
+        </div>
+        <button class="logout-button">
+            <i class="fas fa-logout"></i>
+            <span>Logout</span>
+        </button>
+    </section>
+
+    <!-- <div class="1" style="background-color: aqua; height: 1000px;"></div> -->
 
   <script src="script.js"></script>
 </body>
