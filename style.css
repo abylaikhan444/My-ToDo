@@ -189,3 +189,63 @@ nav {
 .logout-part {
   margin-top: auto; /* выталкивает кнопку вниз */
 }
+
+
+.main {
+  display: flex;
+}
+
+
+.todo-container {
+  margin: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  background: #3ABEFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+ul#taskList {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-item span.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+}

@@ -29,39 +29,53 @@
         </nav>
     </div>
 
+
+    <div class="main">
     <section class="left-navbar">
-        <div class="user-info">
-            <img src="/img/avatar.png" alt="user-photo">
-            <p>Abylaikhan</p>
-            <span>Abylaikhan@gmail.com</span>
+            <div class="user-info">
+                <img src="/img/avatar.png" alt="user-photo">
+                <p>Abylaikhan</p>
+                <span>Abylaikhan@gmail.com</span>
+            </div>
+            <div class="navbar-items">
+                <div class="dashboard-case">
+                    <img src="/img/Vectors/dashboard.png" alt="Dashboard-png">
+                    <a href="#"><span>Dashboard</span></a>
+                </div>
+                <div class="dashboard-case">
+                    <img src="/img/Vectors/Task.png" alt="Task-png">
+                    <a href="#"><span>Task</span></a>
+                </div>
+                <div class="dashboard-case">
+                    <img src="/img/Vectors/Setting.png" alt="Setting-png">
+                    <a href="#"><span>Setting</span></a>
+                </div>
+                <div class="dashboard-case">
+                    <img src="/img/Vectors/Help.png" alt="help-png">
+                    <a href="#"><span>Help</span></a>
+                </div>
+            </div>
+            <a href="#" class="logout-button">
+                <img src="/img/Vectors/Logout.png" alt="logout-png">
+                <span>Logout</span>
+            </a>
+        </section>
+
+        <div class="main-content">
+            <h2>Мои задачи</h2>
+            <div class="todo-container">
+                <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Введите новую задачу..." />
+                <button id="addTaskBtn">Добавить</button>
+                </div>
+                <ul id="taskList"></ul>
+            </div>
         </div>
-        <div class="navbar-items">
-            <div class="dashboard-case">
-                <img src="/img/Vectors/dashboard.png" alt="Dashboard-png">
-                <a href="#"><span>Dashboard</span></a>
-            </div>
-            <div class="dashboard-case">
-                <img src="/img/Vectors/Task.png" alt="Task-png">
-                <a href="#"><span>Task</span></a>
-            </div>
-            <div class="dashboard-case">
-                <img src="/img/Vectors/Setting.png" alt="Setting-png">
-                <a href="#"><span>Setting</span></a>
-            </div>
-            <div class="dashboard-case">
-                <img src="/img/Vectors/Help.png" alt="help-png">
-                <a href="#"><span>Help</span></a>
-            </div>
-        </div>
-        <a href="#" class="logout-button">
-            <img src="/img/Vectors/Logout.png" alt="logout-png">
-            <span>Logout</span>
-        </a>
-        
-    </section>
+    </div>  
+    
 
     <!-- <div class="1" style="background-color: aqua; height: 1000px;"></div> -->
 
-  <script src="script.js"></script>
-</body>
+  <script src="main.js"></script>
+</body> 
 </html>
